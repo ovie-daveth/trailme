@@ -1,0 +1,70 @@
+.sidebar{
+    margin-top: 3rem;
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a{
+            padding: 3px 10px;
+        }
+        a:hover{
+            background-color: rgba(241, 146, 146, 0.808);
+            border-radius: 10px;
+        }
+        .disp{
+            background-color: rgba(241, 146, 146, 0.808);
+            border-radius: 10px;
+        }
+    }
+    .workplace{
+        border-top: 1px solid rgb(196, 191, 191);
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+        .dept{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px;
+            .title{
+                font-size: 12px;
+                font-weight: 800;
+                cursor: pointer;
+            }
+            .dept-icon{
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+        .dept:hover{
+            background-color: rgba(241, 146, 146, 0.808);
+            border-radius: 10px;
+        }
+        .depts{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            margin-top: 0.5rem;
+            transition: all 0.5s ease-in-out;
+            a{
+                padding: 3px 10px;
+            }
+            a:hover{
+                background-color: rgba(241, 146, 146, 0.808);
+                border-radius: 10px;
+            }
+            .disp{
+                background-color: rgba(241, 146, 146, 0.808);
+                border-radius: 10px;
+            }
+        }
+        .closed{
+            height: 0px;
+            overflow-y: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+        .open{
+            height: 150px;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
